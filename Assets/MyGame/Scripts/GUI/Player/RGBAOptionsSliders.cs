@@ -1,14 +1,14 @@
 
 using UnityEngine;
 
-public class sliders : MonoBehaviour
+public class RGBAOptionsSliders : MonoBehaviour
 {
-    public Color myColor;
-    void OnGUI()
+    private Color myColor;
+    private void OnGUI()
     {
         myColor = RGBSlider(new Rect(10, 10, 200, 20), myColor);
     }
-    Color RGBSlider(Rect screenRect, Color rgb)
+    private Color RGBSlider(Rect screenRect, Color rgb)
     {
         rgb.r = LabelSlider(screenRect, rgb.r, 1.0f, "Red");
         screenRect.y += 20;
@@ -19,7 +19,7 @@ public class sliders : MonoBehaviour
         rgb.a = LabelSlider(screenRect, rgb.a, 1.0f, "Alpha");
         return rgb;
     }
-    float LabelSlider(Rect screenRect, float sliderValue, float sliderMaxValue,
+    private float LabelSlider(Rect screenRect, float sliderValue, float sliderMaxValue,
     string labelText)
     {
         GUI.Label(screenRect, labelText);

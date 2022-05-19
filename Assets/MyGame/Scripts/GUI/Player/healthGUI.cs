@@ -1,7 +1,7 @@
 
 using UnityEngine;
 
-public class healthGUI : MonoBehaviour
+public class HealthGUI : MonoBehaviour
 {
     [SerializeField] int health = 100;
     GUIStyle myStyle = new GUIStyle();

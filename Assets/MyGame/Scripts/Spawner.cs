@@ -1,11 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-    public GameObject entityToSpawn;
-    public SpawnManagerScriptableObject spawnManagerValues;
+    [SerializeField] private GameObject entityToSpawn;
+    [SerializeField] private SpawnManagerScriptableObject spawnManagerValues;
     int instanceNumber = 1;
     void Start()
     {
