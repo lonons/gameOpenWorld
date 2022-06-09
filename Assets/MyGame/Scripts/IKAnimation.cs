@@ -7,11 +7,11 @@ public class IKAnimation : MonoBehaviour
     [SerializeField]
     private bool _isActive;
     [SerializeField]
-    private Transform _pointRightHand = null;
+    private Transform _pointRightHand;
     [SerializeField]
-    private Transform _pointLeftHand = null;
+    private Transform _pointLeftHand;
     [SerializeField]
-    private Transform _pointLook = null;
+    private Transform _pointLook;
 
     private Animator _animator;
 
