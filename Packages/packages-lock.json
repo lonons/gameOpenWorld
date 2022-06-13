@@ -49,6 +49,12 @@
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
+    "com.unity.postprocessing": {
+      "version": "file:C:/Users/admin/Downloads/PostProcessing-2.1.7/PostProcessing-2.1.7",
+      "depth": 0,
+      "source": "local",
+      "dependencies": {}
+    },
     "com.unity.services.core": {
       "version": "1.0.1",
       "depth": 1,
